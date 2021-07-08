@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/opt/cfy/bin/python
 
 from __future__ import print_function
 import argparse
