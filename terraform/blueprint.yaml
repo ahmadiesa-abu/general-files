@@ -45,6 +45,7 @@ node_templates:
     interfaces:
       cloudify.interfaces.lifecycle:
         configure: {}
+        start: {}
     relationships:
       - target: terraform
         type: cloudify.terraform.relationships.run_on_host
