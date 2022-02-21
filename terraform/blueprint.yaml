@@ -42,6 +42,9 @@ node_templates:
         source:
           location: { get_input: module_source }
         source_path: { get_input: module_source_path }
+    interfaces:
+      cloudify.interfaces.lifecycle:
+        configure: {}
     relationships:
       - target: terraform
         type: cloudify.terraform.relationships.run_on_host
